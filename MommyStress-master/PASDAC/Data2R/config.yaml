@@ -1,0 +1,57 @@
+PATH_DATA: Data2R           # folder containing original data
+PATH_OUTPUT: Output         # folder containing generated data
+
+SAVING_DATA: CSV            # or PICKLE
+
+SMOOTHING_TECHNIQUE:
+  method: boxcar    # or method: gaussian, winsize:30, sigma:0.1
+  winsize: 30
+
+SEGMENTATION_TECHNIQUE:
+  method: slidingWindow
+  winSizeSecond: 1
+  stepSizeSecond: 0.1
+
+FEATURE_TYPE: VerySimple
+
+CLASSIFIER: knnVoting
+
+DATASET: gesture
+
+SUBJECT_LIST:
+- 1
+- 2
+
+PARTITION:
+  SUBJECT_DEPENDENCY: "generalized"   # personalized or generalized
+
+SENSORS_AVAILABLE:
+- acc_1_x
+- acc_1_y
+- acc_1_z
+- gyr_1_x
+- gyr_1_y
+- acc_2_x
+- acc_2_y
+- acc_2_z
+- gyr_2_x
+- gyr_2_y
+- acc_3_x
+- acc_3_y
+- acc_3_z
+- gyr_3_x
+- gyr_3_y
+
+CLASS_LABELS:
+- NULL
+- Open window
+- Drink
+- Water plant
+- Close window
+- Cut
+- Chop
+- Stir
+- Book
+- Forehand
+- Backhand
+- Smash

@@ -1,0 +1,39 @@
+PATH_DATA: Data0209           # folder containing original data
+PATH_OUTPUT: Output         # folder containing generated data
+
+SAVING_DATA: CSV            # or PICKLE
+
+SMOOTHING_TECHNIQUE:
+  method: boxcar    # or method: gaussian, winsize:30, sigma:0.1
+  winsize: 30
+
+SEGMENTATION_TECHNIQUE:
+  method: slidingWindow
+  winSizeSecond: 1
+  stepSizeSecond: 0.1
+
+FEATURE_TYPE: VerySimple
+
+CLASSIFIER: knnVoting
+
+DATASET: periodic
+
+SUBJECT_LIST:
+- 1
+- 2
+- 3
+- 4
+
+PARTITION:
+  SUBJECT_DEPENDENCY: "personalized"   # personalized or generalized
+
+SENSORS_AVAILABLE:
+- AccelX
+- AccelY
+- AccelZ
+
+CLASS_LABELS:
+- 0
+- 1
+- 2
+- 3
