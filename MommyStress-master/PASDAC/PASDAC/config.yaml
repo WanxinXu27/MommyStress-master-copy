@@ -25,7 +25,7 @@ SUBJECT_LIST:
 - 4
 
 PARTITION:
-  SUBJECT_DEPENDENCY: "personalized"   # personalized or generalized
+  SUBJECT_DEPENDENCY: "generalized"   # personalized or generalized
 
 SENSORS_AVAILABLE:
 - AccelX

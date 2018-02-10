@@ -1,0 +1,9 @@
+Fscore1: 37.5%
+
+Fscore2: 36.2%
+
+Fscore3: 27.0%
+
+Fscore4: 35.3%
+
+AverageFscore: 34.0%
